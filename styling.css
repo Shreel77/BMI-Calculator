@@ -1,0 +1,38 @@
+body{
+    font-family : Comic Sans MS, sans-serif;
+    background :local#caf1f4;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    height : 100vh;
+
+
+}
+
+.container {
+  background: rgb(252, 135, 135);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 143, 143, 0.1);
+  width: 300px;
+}
+
+input, select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #0060ae;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
