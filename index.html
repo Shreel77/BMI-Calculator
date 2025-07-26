@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced BMI Calculator</title>
+  <link rel="stylesheet" href="styling.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My BMI Calculator</h1>
+
+    <label for="unit">Choose Unit System:</label>
+    <select id="unit" onchange="toggleUnits()">
+      <option value="metric">Metric (kg, cm)</option>
+      <option value="imperial">Imperial (lbs, ft+in)</option>
+    </select>
+
+    <div id="metric-inputs">
+      <label>Height (cm):</label>
+      <input type="number" id="height_cm" />
+
+      <label>Weight (kg):</label>
+      <input type="number" id="weight_kg" />
+    </div>
+
+    <div id="imperial-inputs" style="display:none;">
+      <label>What is your Height:</label>
+      <input type="number" id="height_ft" placeholder="Feet" />
+      <input type="number" id="height_in" placeholder="Inches" />
+
+      <label>What is your weight:</label>
+      <input type="number" id="weight_lb" />
+    </div>
+
+    <button onclick="calculateBMI()">Calculate BMI</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
